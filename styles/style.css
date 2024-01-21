@@ -1,0 +1,242 @@
+a {
+    color: #f3c734;
+}
+@font-face {
+    font-weight: 700;
+    font-family: Stolzl;
+    src: url("../fonts/stolzl_bold.otf");
+}
+@font-face {
+    font-weight: 400;
+    font-family: Stolzl;
+    src: url("../fonts/stolzl_regular.otf");
+}
+@font-face {
+    font-weight: 500;
+    font-family: Stolzl;
+    src: url("../fonts/stolzl_medium.otf");
+}
+@font-face {
+    font-weight: 300;
+    font-family: Stolzl;
+    src: url("../fonts/stolzl_light.otf");
+}
+@font-face {
+    font-weight: 250;
+    font-family: Stolzl;
+    src: url("../fonts/stolzl_thin.otf");
+}
+/* Стили для экранов от 768px до 1199px (планшеты) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    header {
+        padding: 20px 0;
+    }
+}
+
+/* Стили для экранов меньше 768px (мобильные устройства) */
+@media (max-width: 767px) {
+    header {
+        padding: 15px 0;
+        font-size: 14px;
+    }
+}
+/* Стили для мобильных устройств */
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .cardText h3 {
+        font-size: 16px; /* Меньший размер заголовка */
+    }
+
+    .cardText a {
+        font-size: 14px; /* Меньший размер основного текста */
+    }
+}
+
+/* Стили для планшетов */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .card {
+        width: 48%; /* Две карточки в ряд */
+        margin: 1%; /* Небольшой отступ */
+    }
+
+    .cardText h3 {
+        font-size: 18px;
+    }
+
+    .cardText a {
+        font-size: 16px;
+    }
+}
+
+/* Стили для настольных компьютеров */
+@media (min-width: 1025px) {
+    .card {
+        width: 23%; /* Четыре карточки в ряд */
+        margin: 1%;
+    }
+
+    .cardText h3 {
+        font-size: 20px;
+    }
+
+    .cardText a {
+        font-size: 18px;
+    }
+}
+body {
+    font-family: "Stolzl", monospace;
+    font-weight: normal;
+}
+h2 {
+    font-size: 44px;
+}
+h1 {
+    font-weight: 200;
+    font-size: 18px;
+}
+.header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.headerButtons {
+    display: flex;
+    justify-content: space-around;
+}
+.logo {
+    width: 65px;
+    height: 65px;
+}
+.headerButton {
+    background-color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 35px;
+}
+.linkImg {
+    width: 44px;
+    height: 44px;
+    padding: 15px;
+    cursor: pointer;
+}
+.columnsInfo {
+    display: flex;
+    justify-content: space-evenly;
+}
+.infoNameAvatar {
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+}
+.infoWork {
+    margin-top: 40px;
+}
+.infoVideo {
+    display: flex;
+    margin-top: 40px;
+}
+.arrowImg {
+    padding: 15px;
+    width: 70px;
+    height: 85px;
+}
+.infoOnWhite {
+    background-color: #FFFFFF;
+}
+.infoOnOrange {
+    background-color: #f8f1db;
+}
+.infoContent {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+}
+.videoIntroduce {
+    text-align: center;
+}
+.video {
+    border-radius: 15px;
+    height: 50rem;
+    width: 100%;
+}
+.card {
+    height: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    justify-content: center;
+}
+.cardText {
+    font-size: 18px;
+    margin: auto;
+    padding: 15px;
+}
+.cardImg {
+    max-width: 100%;
+    height: auto;
+}
+.footerContainer {
+    margin-top: 30px;
+}
+.footerInfo {
+    display: flex;
+    justify-content: center;
+}
+.footerLinks {
+
+}
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-top: 20px;
+}
+.servicesText {
+    width: 25%;
+}
+.servicesContainer {
+
+}
+.servicesCard {
+    max-width: 100%;
+    margin-top: 20px;
+    height: auto;
+    border-width: thin;
+    border-style: solid;
+    border-color: #777777;
+    width: 100%;
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+}
+.casesContent {
+    display: inline-flex;
+}
+.casesCard {
+    max-width: 100%;
+    margin: auto;
+    height: 100%;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    border-width: thin;
+    border-style: solid;
+    border-color: #777777;
+}
+.infoCases {
+    background-color: #f8f1db;
+    text-align: center;
+    padding: 20px;
+}
+.infoContainer {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+}
